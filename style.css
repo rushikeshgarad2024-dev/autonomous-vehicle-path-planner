@@ -1,0 +1,22 @@
+﻿* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, sans-serif; }
+body { background: #0b0f19; color: #f3f4f6; min-height: 100vh; padding: 24px; }
+.app-container { max-width: 1350px; margin: 0 auto; }
+header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1f2937; padding-bottom: 16px; margin-bottom: 24px; }
+header h1 { font-size: 24px; color: #f97316; font-weight: 700; }
+header p { color: #9ca3af; font-size: 14px; margin-top: 4px; }
+.author-badge { background: rgba(249, 115, 22, 0.15); border: 1px solid rgba(249, 115, 22, 0.3); color: #fdba74; padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.main-layout { display: grid; grid-template-columns: 360px 1fr; gap: 24px; }
+.control-panel { background: #111827; border: 1px solid #1f2937; border-radius: 12px; padding: 20px; }
+.control-panel h3 { font-size: 16px; color: #e5e7eb; margin-bottom: 16px; border-bottom: 1px solid #1f2937; padding-bottom: 8px; }
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; font-size: 13px; color: #9ca3af; margin-bottom: 6px; }
+select { width: 100%; background: #1f2937; border: 1px solid #374151; color: #fff; padding: 8px 12px; border-radius: 6px; }
+.btn-primary { width: 100%; background: linear-gradient(135deg, #ea580c, #c2410c); color: white; border: none; padding: 12px; border-radius: 8px; font-weight: 600; cursor: pointer; }
+.results-card { margin-top: 20px; background: #0f172a; border: 1px solid #1e293b; border-radius: 8px; padding: 16px; }
+.results-card h4 { font-size: 14px; color: #fb923c; margin-bottom: 12px; }
+.stat-row { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid #1e293b; }
+.stat-row span { color: #94a3b8; }
+.badge-safe { background: #064e3b; color: #34d399; padding: 2px 8px; border-radius: 4px; font-weight: 600; font-size: 11px; }
+.viewport-panel { background: #111827; border: 1px solid #1f2937; border-radius: 12px; padding: 16px; }
+.canvas-header { font-size: 13px; color: #9ca3af; margin-bottom: 12px; }
+#navCanvas { background: #030712; border-radius: 8px; border: 1px solid #1f2937; width: 100%; height: auto; }

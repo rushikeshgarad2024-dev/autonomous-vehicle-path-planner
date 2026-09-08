@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><title>Autonomous Vehicle Path Planner | Robotics & Control</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <div class="header-content">
+        <h1>🚗 Autonomous Vehicle Path Planner & Trajectory Control</h1>
+        <p>Rapidly-exploring Random Trees ($RRT^*$), Hybrid $A^*$ & Real-Time Dynamic Obstacle Avoidance</p>
+      </div>
+      <div class="author-badge">Autonomous Systems & Robotics • Rushikesh Garad</div>
+    </header>
+    <div class="main-layout">
+      <div class="control-panel">
+        <h3>Planner Controls</h3>
+        <div class="form-group">
+          <label>Algorithm:</label>
+          <select id="algoSelect">
+            <option value="rrt">RRT* (Optimal Sampling-Based)</option>
+            <option value="astar">Hybrid A* (Kinematic Bicycle Model)</option>
+          </select>
+        </div>
+        <button id="replanBtn" class="btn-primary">🔄 Compute Trajectory</button>
+        <div class="results-card">
+          <h4>📍 Vehicle Telemetry</h4>
+          <div class="stat-row"><span>Trajectory Length:</span> <strong id="pathLen">940.2 m</strong></div>
+          <div class="stat-row"><span>Steering Curvature ($\kappa$):</span> <strong>0.042 rad/m</strong></div>
+          <div class="stat-row"><span>Collision Check:</span> <span class="badge-safe">CLEAR (0 Collisions)</span></div>
+        </div>
+      </div>
+      <div class="viewport-panel">
+        <div class="canvas-header"><span>Map: Green = Start, Red = Goal, Blue Blocks = Obstacles, Yellow = Planned Path</span></div>
+        <canvas id="navCanvas" width="800" height="460"></canvas>
+      </div>
+    </div>
+  </div>
+  <script src="nav.js"></script>
+</body>
+</html>

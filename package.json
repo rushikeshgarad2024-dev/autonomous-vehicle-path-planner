@@ -1,0 +1,10 @@
+﻿{
+  "name": "autonomous-vehicle-path-planner",
+  "version": "1.0.0",
+  "description": "Hybrid A* and Rapidly-exploring Random Tree (RRT*) Autonomous Vehicle Motion Planning & Obstacle Avoidance Suite",
+  "main": "index.html",
+  "scripts": { "start": "npx serve ." },
+  "keywords": ["autonomous-vehicles", "self-driving", "path-planning", "rrt-star", "hybrid-a-star", "robotics", "control-systems"],
+  "author": "Rushikesh Garad",
+  "license": "MIT"
+}
